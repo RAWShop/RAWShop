@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="Mainwindow">
+    <file>Raw_file_format_symbol_256.png</file>
+    <file>HAB_Logo_RSStyle.png</file>
+    <file>lists8.png</file>
+    <file>hab_logo_trans.png</file>
+    <file>together.png</file>
+    <file>Close_button_512.png</file>
+    <file>Storage_diskette_512.png</file>
+    <file>cd12.png</file>
+    <file>arrow163.png</file>
+    <file>curved.png</file>
+    <file>magnifying glass39.png</file>
+    <file>magnifying glass40.png</file>
+    <file>opened18.png</file>
+    <file>sync1.png</file>
+    <file>curved.png</file>
+    <file>opened18.png</file>
+    <file>sync1.png</file>
+    <file>RSv1.png</file>
+  </qresource>
+</RCC>
