@@ -1,2 +1,0 @@
-# RAWShop
-Scope of this software is to load a camera raw image file and convert it to a TIFF file. The User is able to manipulate parts of this processing like white balancing, demosaicing, noise reduction or tone reproduction. Metadata are visible at the sidebar. The processed file is displayed and can be zoomed for details. If the result is satisfactory, the user may save the image. Furthermore there is an option to save the unprocessed raw image as a TIFF file.
