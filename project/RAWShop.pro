@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Datei_oeffnen
+TARGET = RAWShop
 TEMPLATE = app
 
 
@@ -44,12 +44,22 @@ INCLUDEPATH += $$PWD/../../../../../LibRaw/LibRaw-0.16.2/libraw
 DEPENDPATH += $$PWD/../../../../../LibRaw/LibRaw-0.16.2/libraw
 
 win32:RC_ICONS += rawshop_ico.ico \
+                    Back_arrow_to_first_track_512.ico \
+                    curved.ico \
+                    lists8.ico \
                     opened18.ico \
-                    cd12.ico \
+                    Raw_file_format_symbol_256.ico \
+                    Logo_HS.ico \
+                    Storage_diskette_512.ico \
+                    together.ico \
+                    Zoom_1_1.ico \
+                    Zoom_in_button_512.ico \
+                    Zoom_out_512.ico \
                     Close_button_512.ico \
                     sync1.ico
 
 RESOURCES += \
     rawshop.qrc
+
 
 

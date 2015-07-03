@@ -41,14 +41,14 @@ public:
     {
         if (About_RAWShop->objectName().isEmpty())
             About_RAWShop->setObjectName(QStringLiteral("About_RAWShop"));
-        About_RAWShop->resize(550, 675);
+        About_RAWShop->resize(550, 718);
         QSizePolicy sizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(About_RAWShop->sizePolicy().hasHeightForWidth());
         About_RAWShop->setSizePolicy(sizePolicy);
-        About_RAWShop->setMinimumSize(QSize(550, 675));
-        About_RAWShop->setMaximumSize(QSize(550, 675));
+        About_RAWShop->setMinimumSize(QSize(550, 718));
+        About_RAWShop->setMaximumSize(QSize(550, 718));
         QIcon icon;
         icon.addFile(QStringLiteral(":/rawshop_ico.ico"), QSize(), QIcon::Normal, QIcon::Off);
         About_RAWShop->setWindowIcon(icon);
@@ -625,10 +625,10 @@ public:
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         label = new QLabel(groupBox);
         label->setObjectName(QStringLiteral("label"));
-        label->setMinimumSize(QSize(0, 150));
-        label->setMaximumSize(QSize(400, 150));
+        label->setMinimumSize(QSize(230, 230));
+        label->setMaximumSize(QSize(230, 230));
         label->setAutoFillBackground(false);
-        label->setPixmap(QPixmap(QString::fromUtf8(":/HAB_Logo_RSStyle_ohne Rand.png")));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/Logo_HS.ico")));
         label->setScaledContents(true);
         label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
         label->setWordWrap(false);

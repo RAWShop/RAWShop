@@ -14,12 +14,7 @@ int main( int argc, char* argv[])
         MyRAW h;
         myQPixmap d, d2;
         mainwindow w;
-        //QIcon i;
-        //i.addFile("RSv1.png");
 
-
-
-        //a.setWindowIcon(i);
 
         w.rawdata= & h;
         w.data = & d;

@@ -240,30 +240,7 @@ void MyRAW::convert_rgb_to_t(){
 }
 
 
-/*
-void MyRAW::convert_rgb_to_t(int* temperatur,int* tint, float* rgb){
 
-        float tmin, tmax, tmp[3];
-        for(int k = 0; k < 3; k++)
-            tmp[k] = rgb[k];
-                                //rgb values are saved in temp for approximation
-
-        tmin = 1500;			//lowest Temperatur of the Slider in the GUI
-        tmax = 15000;			//highest Temperatur of the Slider in the GUI
-
-        for(*temperatur = (tmax + tmin) / 2; tmax - tmin > 1; *temperatur = (tmax + tmin) / 2) //
-        {
-         convert_t_to_rgb(*temperatur, tmp);	//converts the temperatur and puts the output into temp
-         if(tmp[2] / tmp[0] > rgb[2] / rgb[0]) // Red/blue > Red/Blue means if approximation is bigger than the actuall Temperatur
-           tmax = *temperatur;
-         else
-           tmin = *temperatur;					//increases either tmax or tmin depending if
-        }
-            *tint = (tmp[1] / tmp[0]) / (rgb[1] / rgb[0]); //Calculation of tint
-            if(*tint < 0.2f) *tint = 0.2f;
-            if(*tint > 2.5f) *tint = 2.5f;
-}
-*/
 
 void MyRAW::setoriginalTint_Temprange(){
 	for(int i = 0; i < 4;i++){

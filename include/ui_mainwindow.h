@@ -57,8 +57,8 @@ public:
     QPushButton *B_Update2;
     QPushButton *B_AllOriginal;
     QPushButton *B_Sidemenu2;
-    QPushButton *B_Quit;
     QPushButton *B_saveRaw;
+    QPushButton *B_Quit;
     QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *mainarea;
     QFrame *Displayzone;
@@ -910,28 +910,28 @@ public:
 
         Buttonmenu->addWidget(B_Sidemenu2);
 
+        B_saveRaw = new QPushButton(centralWidget);
+        B_saveRaw->setObjectName(QStringLiteral("B_saveRaw"));
+        B_saveRaw->setMinimumSize(QSize(46, 38));
+        B_saveRaw->setMaximumSize(QSize(46, 38));
+        QIcon icon9;
+        icon9.addFile(QStringLiteral(":/Raw_file_format_symbol_256.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        B_saveRaw->setIcon(icon9);
+        B_saveRaw->setIconSize(QSize(30, 30));
+
+        Buttonmenu->addWidget(B_saveRaw);
+
         B_Quit = new QPushButton(centralWidget);
         B_Quit->setObjectName(QStringLiteral("B_Quit"));
         B_Quit->setEnabled(true);
         B_Quit->setMinimumSize(QSize(46, 38));
         B_Quit->setCursor(QCursor(Qt::ArrowCursor));
-        QIcon icon9;
-        icon9.addFile(QStringLiteral(":/Close_button_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
-        B_Quit->setIcon(icon9);
+        QIcon icon10;
+        icon10.addFile(QStringLiteral(":/Close_button_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        B_Quit->setIcon(icon10);
         B_Quit->setIconSize(QSize(30, 30));
 
         Buttonmenu->addWidget(B_Quit);
-
-        B_saveRaw = new QPushButton(centralWidget);
-        B_saveRaw->setObjectName(QStringLiteral("B_saveRaw"));
-        B_saveRaw->setMinimumSize(QSize(46, 38));
-        B_saveRaw->setMaximumSize(QSize(46, 38));
-        QIcon icon10;
-        icon10.addFile(QStringLiteral(":/Raw_file_format_symbol_256.ico"), QSize(), QIcon::Normal, QIcon::Off);
-        B_saveRaw->setIcon(icon10);
-        B_saveRaw->setIconSize(QSize(30, 30));
-
-        Buttonmenu->addWidget(B_saveRaw);
 
         horizontalSpacer_3 = new QSpacerItem(10000, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -2253,7 +2253,7 @@ public:
         B_ClosePic2->setMinimumSize(QSize(46, 38));
         B_ClosePic2->setMaximumSize(QSize(46, 38));
         B_ClosePic2->setCursor(QCursor(Qt::ArrowCursor));
-        B_ClosePic2->setIcon(icon9);
+        B_ClosePic2->setIcon(icon10);
         B_ClosePic2->setIconSize(QSize(30, 30));
 
         verticalLayout_3->addWidget(B_ClosePic2);
@@ -2863,7 +2863,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, -204, 373, 1413));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 373, 1413));
         verticalLayout_2 = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -4192,16 +4192,16 @@ public:
 #endif // QT_NO_WHATSTHIS
         B_Sidemenu2->setText(QString());
 #ifndef QT_NO_TOOLTIP
+        B_saveRaw->setToolTip(QApplication::translate("mainwindow", "Save Unprocessed RAW", 0));
+#endif // QT_NO_TOOLTIP
+        B_saveRaw->setText(QString());
+#ifndef QT_NO_TOOLTIP
         B_Quit->setToolTip(QApplication::translate("mainwindow", "Quit", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         B_Quit->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         B_Quit->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        B_saveRaw->setToolTip(QApplication::translate("mainwindow", "Save Unprocessed RAW", 0));
-#endif // QT_NO_TOOLTIP
-        B_saveRaw->setText(QString());
 #ifndef QT_NO_WHATSTHIS
         L_Display->setWhatsThis(QApplication::translate("mainwindow", "<html><head/><body><p><br/></p></body></html>", 0));
 #endif // QT_NO_WHATSTHIS

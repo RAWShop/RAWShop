@@ -64,6 +64,7 @@ mainwindow::mainwindow(QMainWindow *parent) : QMainWindow(parent){
         M_saveUnprocessedData->setEnabled(false);
         B_saveRaw->setEnabled(false);
         B_Update2->setEnabled(false);
+        B_AllOriginal->setEnabled(false);
 
 
 
@@ -211,9 +212,10 @@ mainwindow::mainwindow(QMainWindow *parent) : QMainWindow(parent){
         LE_Banding_Noise->	setValidator(new QDoubleValidator_StandardNotation(0.001,0.020,3,this));
 
 
-         L_Display_2->setHidden(true);					// hier nicht !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+         L_Display_2->setHidden(true);
         Frame_Pic2->setHidden(true);
         L_Display_exc->setHidden(true);
+
 
 
 
@@ -238,7 +240,7 @@ void mainwindow::opendataquestion(){
                 "C://",
                 "Raw-Files (*.3fr *.awr *.cr2 *.crw *.dcr *.dng *.erf *.kdc *.mdc *.mef *.mrw *.nef *.nrw *.orf *.pef  *.tif *.raf *.raw *.rw2 *.rwl *.sr2 *.srw *.tif *.x3f)"		// ERWEITERUNG FÜR ALLE GÄNGIGEN FORMATE ! *eip funktioniert nicht...
                 );
-    ///////////////////////////////////////////////////////////////
+
 
                                                                         // filepath_forlibraw sollte allokiert werden (nicht statisch)!
 
@@ -280,6 +282,7 @@ void mainwindow::opendata(){
         M_saveUnprocessedData->setEnabled(true);
         B_saveRaw->setEnabled(true);
         B_Update2->setEnabled(true);
+        B_AllOriginal->setEnabled(true);
 
     // Meta Daten anzeigen
     showMetadata();
@@ -964,7 +967,7 @@ void mainwindow::init(){
  CB_Interpolation->setCurrentIndex(0);
 
 
- L_Display_2->setHidden(true);					// hier nicht !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ L_Display_2->setHidden(true);
  Frame_Pic2->setHidden(true);
  L_Display_exc->setHidden(true);
 
@@ -1130,11 +1133,11 @@ void mainwindow::showaboutus(){
 
 
 void mainwindow::closePic2(){
-    L_Display_2->setHidden(true);					// hier nicht !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    L_Display_2->setHidden(true);
     Frame_Pic2->setHidden(true);
     L_Display_exc->setHidden(true);
 
-    SB_Zoom->setValue(14);
+    //SB_Zoom->setValue(14);
 
     L_Display->resize(Displayzone->width()-2,Frame_Pic2->height());
     showQPM();

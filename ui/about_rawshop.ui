@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>550</width>
-    <height>675</height>
+    <height>718</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,13 +19,13 @@
   <property name="minimumSize">
    <size>
     <width>550</width>
-    <height>675</height>
+    <height>718</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>550</width>
-    <height>675</height>
+    <height>718</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -629,14 +629,14 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <widget class="QLabel" name="label">
           <property name="minimumSize">
            <size>
-            <width>0</width>
-            <height>150</height>
+            <width>230</width>
+            <height>230</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>400</width>
-            <height>150</height>
+            <width>230</width>
+            <height>230</height>
            </size>
           </property>
           <property name="autoFillBackground">
@@ -646,7 +646,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="rawshop.qrc">:/HAB_Logo_RSStyle_ohne Rand.png</pixmap>
+           <pixmap resource="rawshop.qrc">:/Logo_HS.ico</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>

@@ -779,6 +779,38 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="B_saveRaw">
+        <property name="minimumSize">
+         <size>
+          <width>46</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>46</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Save Unprocessed RAW</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="rawshop.qrc">
+          <normaloff>:/Raw_file_format_symbol_256.ico</normaloff>:/Raw_file_format_symbol_256.ico</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="B_Quit">
         <property name="enabled">
          <bool>true</bool>
@@ -804,38 +836,6 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
         <property name="icon">
          <iconset resource="rawshop.qrc">
           <normaloff>:/Close_button_512.ico</normaloff>:/Close_button_512.ico</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>30</width>
-          <height>30</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="B_saveRaw">
-        <property name="minimumSize">
-         <size>
-          <width>46</width>
-          <height>38</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>46</width>
-          <height>38</height>
-         </size>
-        </property>
-        <property name="toolTip">
-         <string>Save Unprocessed RAW</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Raw_file_format_symbol_256.ico</normaloff>:/Raw_file_format_symbol_256.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -4151,7 +4151,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                 <property name="geometry">
                  <rect>
                   <x>0</x>
-                  <y>-204</y>
+                  <y>0</y>
                   <width>373</width>
                   <height>1413</height>
                  </rect>

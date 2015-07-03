@@ -5,10 +5,18 @@
 # endif
 
 IDI_ICON1	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\rawshop_ico.ico"
-IDI_ICON2	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\opened18.ico"
-IDI_ICON3	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\cd12.ico"
-IDI_ICON4	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Close_button_512.ico"
-IDI_ICON5	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\sync1.ico"
+IDI_ICON2	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Back_arrow_to_first_track_512.ico"
+IDI_ICON3	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\curved.ico"
+IDI_ICON4	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\lists8.ico"
+IDI_ICON5	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\opened18.ico"
+IDI_ICON6	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Raw_file_format_symbol_256.ico"
+IDI_ICON7	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Storage_diskette_512.ico"
+IDI_ICON8	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\together.ico"
+IDI_ICON9	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Zoom_1_1.ico"
+IDI_ICON10	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Zoom_in_button_512.ico"
+IDI_ICON11	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Zoom_out_512.ico"
+IDI_ICON12	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\Close_button_512.ico"
+IDI_ICON13	ICON	DISCARDABLE	"C:\\Users\\Internet\\Documents\\QT Projects\\RAWShop\\sync1.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0
