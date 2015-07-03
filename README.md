@@ -7,8 +7,9 @@ the user may save the image. Furthermore there is an option to save the unproces
 This program was a students' project from six Electrical Engineering students in the fourth semester of the University of Applied Science Aschaffenburg.
 It was developed during the summer semester 2015. 
 
-To develop this software you can use the Qt Creator project in the project directory. LibRaw must be installed on your PC and
+To develop this software you can use the Qt Creator project in the project folder. LibRaw must be installed on your PC and
 linked correctly to the project. Also there is an installer script which was programmed using NSIS 2.46.
+To use RAWShop you have to copy all the files and folders in the libs folder in the applications' path.
 
 If there is any problem don't be shy to contact us at RAWShopHAB@outlook.com
 
