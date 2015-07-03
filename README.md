@@ -11,6 +11,6 @@ To develop this software you can use the Qt Creator project in the project folde
 linked correctly to the project. Also there is an installer script which was programmed using NSIS 2.46.
 To use RAWShop you have to copy all the files and folders in the libs folder in the applications' path.
 
-If there is any problem don't be shy to contact us at RAWShopHAB@outlook.com
+If there is any problem don't be shy to contact us at RAWShopHAB@outlook.de
 
 Your RAWShop Team 
