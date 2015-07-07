@@ -107,8 +107,8 @@ class mainwindow : public QMainWindow, public Ui::mainwindow{
                 QString direction;
 
 
-                bool preisright;
-                bool usecompic;
+                bool preisright;						// True == Letztes Bild rechts
+                bool usecompic;							// True == Vergleichmodus
                 bool issaved;							// True == Datei ist gespeichert
                 bool iszoomed;							// True == Darstellung ist gezoomt
                 bool isdraged;							// True == Maus ist gedrückt
@@ -120,7 +120,7 @@ class mainwindow : public QMainWindow, public Ui::mainwindow{
                 void showQPM();
                 void showMetadata();
                 bool usedcraw();
-                void loaddata();
+                void loaddata();									
 
                 bool closeQuestion();									// "Schon gespeichert?" ja/nein
                 bool error(int errorcode, QString words);				// Funktion zur Fehlerausgabe

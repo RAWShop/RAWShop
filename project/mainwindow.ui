@@ -20,7 +20,7 @@
    <enum>Qt::NoFocus</enum>
   </property>
   <property name="windowTitle">
-   <string>RAWShop v0.8</string>
+   <string>RAWShop v1.0</string>
   </property>
   <property name="windowIcon">
    <iconset resource="rawshop.qrc">
@@ -4172,7 +4172,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                     </size>
                    </property>
                    <property name="toolTip">
-                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Clockwise&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    <string/>
                    </property>
                    <property name="title">
                     <string>Image Processing</string>
@@ -6197,8 +6197,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>380</width>
-                  <height>640</height>
+                  <width>79</width>
+                  <height>64</height>
                  </rect>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_5">

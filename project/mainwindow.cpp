@@ -212,7 +212,7 @@ mainwindow::mainwindow(QMainWindow *parent) : QMainWindow(parent){
         LE_Banding_Noise->	setValidator(new QDoubleValidator_StandardNotation(0.001,0.020,3,this));
 
 
-         L_Display_2->setHidden(true);
+         L_Display_2->setHidden(true);					// hier nicht !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Frame_Pic2->setHidden(true);
         L_Display_exc->setHidden(true);
 
@@ -261,7 +261,8 @@ void mainwindow::opendata(){
 
     rawdata->verbose=1;											// wahrscheinlich nicht nötig
 
-
+    if (!L_Display_2->isHidden())
+    closePic2();
 
     L_FileDirection->setText(direction);						// Nur zum Anzeigen des Dateiverzeichnisses
 
@@ -417,7 +418,6 @@ void mainwindow::drop(){
 
 void mainwindow::showQPM(){
     L_Display->setPixmap(data->getScaled(iszoomed,SB_Zoom->value(),startx,starty,L_Display->width(),L_Display->height()));
-
 
     if(usecompic)
     L_Display_2->setPixmap(lastpic->getScaled(iszoomed,SB_Zoom->value(),startx,starty,L_Display->width(),L_Display->height()));
@@ -576,10 +576,11 @@ bool mainwindow::usedcraw(){
 
 
 
-    // Vorschau?
+    // Vorschau? bzw Zoom?
     if(rawdata->imgdata.params.user_flip != lastflip || RB_PreNo->isChecked())
     {
         usecompic=false;
+		SB_Zoom->setValue(14);
     }
     else
     {
@@ -719,6 +720,8 @@ bool mainwindow::error(int errorcode, QString words){
         }
     return false;
 }
+
+
 
 void mainwindow::loaddata(){
     if(usedcraw())
@@ -967,7 +970,7 @@ void mainwindow::init(){
  CB_Interpolation->setCurrentIndex(0);
 
 
- L_Display_2->setHidden(true);
+ L_Display_2->setHidden(true);					// hier nicht !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  Frame_Pic2->setHidden(true);
  L_Display_exc->setHidden(true);
 
@@ -995,18 +998,32 @@ void mainwindow::startopen(char * openpath){
 
 void mainwindow::resize_sidemenu(){
 
+	int change=0;
+
+	if(usecompic && preisright)
+	{
+		change=200;
+	}
+	else
+	{
+		change=400;
+	}
 
 
-    if(sidemenuisopen){
-        Sidemenu->setFixedWidth(1);
-        L_Display->resize(L_Display->width()+399,L_Display->height());
-        sidemenuisopen=false;
-    }
-    else{
-        Sidemenu->setFixedWidth(400);
-        L_Display->resize(L_Display->width()-399,L_Display->height());
-        sidemenuisopen=true;
-    }
+
+	if(sidemenuisopen)
+	{
+		Sidemenu->setFixedWidth(0);
+		L_Display->resize(L_Display->width()+change,L_Display->height());
+		sidemenuisopen=false;
+	}
+	else
+	{
+		Sidemenu->setFixedWidth(400);
+		L_Display->resize(L_Display->width()-change,L_Display->height());
+		sidemenuisopen=true;
+	}
+
     showQPM();
 }
 
@@ -1133,12 +1150,9 @@ void mainwindow::showaboutus(){
 
 
 void mainwindow::closePic2(){
-    L_Display_2->setHidden(true);
+    L_Display_2->setHidden(true);					
     Frame_Pic2->setHidden(true);
     L_Display_exc->setHidden(true);
-
-    //SB_Zoom->setValue(14);
-
     L_Display->resize(Displayzone->width()-2,Frame_Pic2->height());
     showQPM();
 }

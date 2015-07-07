@@ -3881,7 +3881,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QStringLiteral("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 380, 640));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 79, 64));
         verticalLayout_5 = new QVBoxLayout(scrollAreaWidgetContents_2);
         verticalLayout_5->setSpacing(6);
         verticalLayout_5->setContentsMargins(11, 11, 11, 11);
@@ -4130,7 +4130,7 @@ public:
 
     void retranslateUi(QMainWindow *mainwindow)
     {
-        mainwindow->setWindowTitle(QApplication::translate("mainwindow", "RAWShop v0.8", 0));
+        mainwindow->setWindowTitle(QApplication::translate("mainwindow", "RAWShop v1.0", 0));
         M_Open->setText(QApplication::translate("mainwindow", "Open...", 0));
         M_saveProcessedData->setText(QApplication::translate("mainwindow", "Processed Data", 0));
         M_saveUnprocessedData->setText(QApplication::translate("mainwindow", "Unprocessed Data", 0));
@@ -4230,7 +4230,7 @@ public:
         B_Orderchange->setText(QString());
         B_Sidemenu->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        groupBox_3->setToolTip(QApplication::translate("mainwindow", "<html><head/><body><p>Clockwise</p></body></html>", 0));
+        groupBox_3->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
         groupBox_3->setTitle(QApplication::translate("mainwindow", "Image Processing", 0));
         label_4->setText(QApplication::translate("mainwindow", "Rotation:               ", 0));

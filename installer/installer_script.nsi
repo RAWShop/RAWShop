@@ -3,8 +3,8 @@ SetCompressor lzma
 !include x64.nsh
 !include FileFunc.nsh
 
-!define VERSION "RAWShop_0.8"
-!define VERSION_PRETTY "RAWShop 0.8"
+!define VERSION "RAWShop_1.0"
+!define VERSION_PRETTY "RAWShop 1.0"
 OutFile "${VERSION}_install.exe"
 InstallDir "$PROGRAMFILES\${VERSION}"
 Name "${VERSION_PRETTY}"
@@ -234,7 +234,7 @@ FunctionEnd
 
 Function .onInit
 Push 0						;Stack Ende
-${If} ${RunningX64}			;überprüfung, ob System 64 bit ist -> In entsprechende Registry schreiben
+${If} ${RunningX64}			;Überprüfung, ob System 64 bit ist -> In entsprechendes Registry schreiben
 SetRegView 64	
 ${ELSE}
 SetRegView 32
