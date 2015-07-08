@@ -53,6 +53,7 @@ File D:\Test_Installer\Rawshop_install_files\platforms\qwindows.dll
 CreateDirectory "$INSTDIR\imageformats"
 SetOutPath "$INSTDIR\imageformats"
 File D:\Test_Installer\Rawshop_install_files\imageformats\qtiff.dll
+File D:\Test_Installer\Rawshop_install_files\imageformats\qico.dll
 WriteRegStr HKEY_CLASSES_ROOT "RAWShop\DefaultIcon" "" "$INSTDIR\RAWShop.exe"	;Icon setzen für RAWShop
 WriteRegStr HKEY_CLASSES_ROOT "RAWShop\shell\open\command" "" "$INSTDIR\RAWShop.exe %1"	;fürs Doppelklicken auf .xxx -> öffnet sich mit RAWShop
 WriteUninstaller "$INSTDIR\uninstall.exe"						;Uninstaller schreiben (siehe unten)

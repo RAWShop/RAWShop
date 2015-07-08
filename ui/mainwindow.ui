@@ -23,8 +23,8 @@
    <string>RAWShop v1.0</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="rawshop.qrc">
-    <normaloff>:/rawshop_ico.ico</normaloff>:/rawshop_ico.ico</iconset>
+   <iconset resource="icons.qrc">
+    <normaloff>:/Icons/rawshop_ico.ico</normaloff>:/Icons/rawshop_ico.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QToolTip
@@ -564,8 +564,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/opened18.ico</normaloff>:/opened18.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/opened18.ico</normaloff>:/Icons/opened18.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -587,8 +587,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Storage_diskette_512.ico</normaloff>:/Storage_diskette_512.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Storage_diskette_512.ico</normaloff>:/Icons/Storage_diskette_512.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -616,8 +616,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Zoom_in_button_512.ico</normaloff>:/Zoom_in_button_512.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Zoom_in_button_512.ico</normaloff>:/Icons/Zoom_in_button_512.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -645,8 +645,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Zoom_out_512.ico</normaloff>:/Zoom_out_512.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Zoom_out_512.ico</normaloff>:/Icons/Zoom_out_512.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -674,8 +674,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Zoom_1_1.ico</normaloff>:/Zoom_1_1.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Zoom_1_1.ico</normaloff>:/Icons/Zoom_1_1.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -703,8 +703,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/sync1.ico</normaloff>:/sync1.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/sync1.ico</normaloff>:/Icons/sync1.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -732,8 +732,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Back_arrow_to_first_track_512.ico</normaloff>:/Back_arrow_to_first_track_512.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Back_arrow_to_first_track_512.ico</normaloff>:/Icons/Back_arrow_to_first_track_512.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -767,8 +767,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/lists8.ico</normaloff>:/lists8.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/lists8.ico</normaloff>:/Icons/lists8.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -799,8 +799,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Raw_file_format_symbol_256.ico</normaloff>:/Raw_file_format_symbol_256.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Raw_file_format_symbol_256.ico</normaloff>:/Icons/Raw_file_format_symbol_256.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -834,8 +834,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="rawshop.qrc">
-          <normaloff>:/Close_button_512.ico</normaloff>:/Close_button_512.ico</iconset>
+         <iconset resource="icons.qrc">
+          <normaloff>:/Icons/Close_button_512.ico</normaloff>:/Icons/Close_button_512.ico</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -3414,8 +3414,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="rawshop.qrc">
-             <normaloff>:/Close_button_512.ico</normaloff>:/Close_button_512.ico</iconset>
+            <iconset resource="icons.qrc">
+             <normaloff>:/Icons/Close_button_512.ico</normaloff>:/Icons/Close_button_512.ico</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -3471,8 +3471,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="rawshop.qrc">
-             <normaloff>:/together.ico</normaloff>:/together.ico</iconset>
+            <iconset resource="icons.qrc">
+             <normaloff>:/Icons/together.ico</normaloff>:/Icons/together.ico</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -4172,7 +4172,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                     </size>
                    </property>
                    <property name="toolTip">
-                    <string/>
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Clockwise&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                    </property>
                    <property name="title">
                     <string>Image Processing</string>
@@ -4246,8 +4246,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                          <string/>
                         </property>
                         <property name="icon">
-                         <iconset resource="rawshop.qrc">
-                          <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                         </property>
                        </widget>
                       </item>
@@ -4315,8 +4315,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                          <string/>
                         </property>
                         <property name="icon">
-                         <iconset resource="rawshop.qrc">
-                          <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                         </property>
                        </widget>
                       </item>
@@ -4431,8 +4431,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                          <string/>
                         </property>
                         <property name="icon">
-                         <iconset resource="rawshop.qrc">
-                          <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                         </property>
                        </widget>
                       </item>
@@ -4517,8 +4517,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                            <string/>
                           </property>
                           <property name="icon">
-                           <iconset resource="rawshop.qrc">
-                            <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                           <iconset resource="icons.qrc">
+                            <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                           </property>
                          </widget>
                         </item>
@@ -4608,8 +4608,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                            <string/>
                           </property>
                           <property name="icon">
-                           <iconset resource="rawshop.qrc">
-                            <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                           <iconset resource="icons.qrc">
+                            <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                           </property>
                          </widget>
                         </item>
@@ -4729,8 +4729,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="rawshop.qrc">
-                              <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                             </property>
                            </widget>
                           </item>
@@ -4826,8 +4826,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="rawshop.qrc">
-                              <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                             </property>
                            </widget>
                           </item>
@@ -4921,8 +4921,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="rawshop.qrc">
-                              <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                             </property>
                            </widget>
                           </item>
@@ -5004,8 +5004,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="rawshop.qrc">
-                              <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                             </property>
                            </widget>
                           </item>
@@ -5099,8 +5099,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="rawshop.qrc">
-                              <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                             </property>
                            </widget>
                           </item>
@@ -5248,8 +5248,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                            <string/>
                           </property>
                           <property name="icon">
-                           <iconset resource="rawshop.qrc">
-                            <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                           <iconset resource="icons.qrc">
+                            <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                           </property>
                          </widget>
                         </item>
@@ -5327,8 +5327,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                            <string/>
                           </property>
                           <property name="icon">
-                           <iconset resource="rawshop.qrc">
-                            <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                           <iconset resource="icons.qrc">
+                            <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                           </property>
                          </widget>
                         </item>
@@ -5429,8 +5429,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                          <string/>
                         </property>
                         <property name="icon">
-                         <iconset resource="rawshop.qrc">
-                          <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                         </property>
                        </widget>
                       </item>
@@ -5601,8 +5601,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                          <string/>
                         </property>
                         <property name="icon">
-                         <iconset resource="rawshop.qrc">
-                          <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                         </property>
                        </widget>
                       </item>
@@ -5702,8 +5702,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                          <string/>
                         </property>
                         <property name="icon">
-                         <iconset resource="rawshop.qrc">
-                          <normaloff>:/curved.ico</normaloff>:/curved.ico</iconset>
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/Icons/curved.ico</normaloff>:/Icons/curved.ico</iconset>
                         </property>
                        </widget>
                       </item>
@@ -6035,8 +6035,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                 <string>Update</string>
                </property>
                <property name="icon">
-                <iconset resource="rawshop.qrc">
-                 <normaloff>:/sync1.ico</normaloff>:/sync1.ico</iconset>
+                <iconset resource="icons.qrc">
+                 <normaloff>:/Icons/sync1.ico</normaloff>:/Icons/sync1.ico</iconset>
                </property>
               </widget>
              </item>
@@ -6197,8 +6197,8 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>79</width>
-                  <height>64</height>
+                  <width>380</width>
+                  <height>640</height>
                  </rect>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -7102,7 +7102,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="rawshop.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -261,8 +261,7 @@ void mainwindow::opendata(){
 
     rawdata->verbose=1;											// wahrscheinlich nicht nötig
 
-    if (!L_Display_2->isHidden())
-    closePic2();
+
 
     L_FileDirection->setText(direction);						// Nur zum Anzeigen des Dateiverzeichnisses
 
@@ -580,7 +579,7 @@ bool mainwindow::usedcraw(){
     if(rawdata->imgdata.params.user_flip != lastflip || RB_PreNo->isChecked())
     {
         usecompic=false;
-		SB_Zoom->setValue(14);
+        SB_Zoom->setValue(14);
     }
     else
     {
@@ -998,31 +997,31 @@ void mainwindow::startopen(char * openpath){
 
 void mainwindow::resize_sidemenu(){
 
-	int change=0;
+    int change=0;
 
-	if(usecompic && preisright)
-	{
-		change=200;
-	}
-	else
-	{
-		change=400;
-	}
+    if(usecompic && preisright)
+    {
+        change=200;
+    }
+    else
+    {
+        change=400;
+    }
 
 
 
-	if(sidemenuisopen)
-	{
-		Sidemenu->setFixedWidth(0);
-		L_Display->resize(L_Display->width()+change,L_Display->height());
-		sidemenuisopen=false;
-	}
-	else
-	{
-		Sidemenu->setFixedWidth(400);
-		L_Display->resize(L_Display->width()-change,L_Display->height());
-		sidemenuisopen=true;
-	}
+    if(sidemenuisopen)
+    {
+        Sidemenu->setFixedWidth(0);
+        L_Display->resize(L_Display->width()+change,L_Display->height());
+        sidemenuisopen=false;
+    }
+    else
+    {
+        Sidemenu->setFixedWidth(400);
+        L_Display->resize(L_Display->width()-change,L_Display->height());
+        sidemenuisopen=true;
+    }
 
     showQPM();
 }
@@ -1150,7 +1149,7 @@ void mainwindow::showaboutus(){
 
 
 void mainwindow::closePic2(){
-    L_Display_2->setHidden(true);					
+    L_Display_2->setHidden(true);
     Frame_Pic2->setHidden(true);
     L_Display_exc->setHidden(true);
     L_Display->resize(Displayzone->width()-2,Frame_Pic2->height());

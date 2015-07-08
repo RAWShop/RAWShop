@@ -284,7 +284,7 @@ public:
         mainwindow->setMinimumSize(QSize(1200, 600));
         mainwindow->setFocusPolicy(Qt::NoFocus);
         QIcon icon;
-        icon.addFile(QStringLiteral(":/rawshop_ico.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/Icons/rawshop_ico.ico"), QSize(), QIcon::Normal, QIcon::Off);
         mainwindow->setWindowIcon(icon);
         mainwindow->setStyleSheet(QLatin1String("QToolTip\n"
 "{\n"
@@ -833,7 +833,7 @@ public:
         B_Open = new QPushButton(centralWidget);
         B_Open->setObjectName(QStringLiteral("B_Open"));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/opened18.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QStringLiteral(":/Icons/opened18.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Open->setIcon(icon1);
         B_Open->setIconSize(QSize(30, 30));
 
@@ -842,7 +842,7 @@ public:
         B_Save = new QPushButton(centralWidget);
         B_Save->setObjectName(QStringLiteral("B_Save"));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/Storage_diskette_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QStringLiteral(":/Icons/Storage_diskette_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Save->setIcon(icon2);
         B_Save->setIconSize(QSize(30, 30));
 
@@ -852,7 +852,7 @@ public:
         B_ZoomIn->setObjectName(QStringLiteral("B_ZoomIn"));
         B_ZoomIn->setMinimumSize(QSize(48, 38));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/Zoom_in_button_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QStringLiteral(":/Icons/Zoom_in_button_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_ZoomIn->setIcon(icon3);
         B_ZoomIn->setIconSize(QSize(30, 30));
 
@@ -862,7 +862,7 @@ public:
         B_ZoomOut->setObjectName(QStringLiteral("B_ZoomOut"));
         B_ZoomOut->setMinimumSize(QSize(48, 38));
         QIcon icon4;
-        icon4.addFile(QStringLiteral(":/Zoom_out_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QStringLiteral(":/Icons/Zoom_out_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_ZoomOut->setIcon(icon4);
         B_ZoomOut->setIconSize(QSize(30, 30));
 
@@ -872,7 +872,7 @@ public:
         B_Zoom1to1->setObjectName(QStringLiteral("B_Zoom1to1"));
         B_Zoom1to1->setMinimumSize(QSize(48, 38));
         QIcon icon5;
-        icon5.addFile(QStringLiteral(":/Zoom_1_1.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QStringLiteral(":/Icons/Zoom_1_1.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Zoom1to1->setIcon(icon5);
         B_Zoom1to1->setIconSize(QSize(30, 30));
 
@@ -882,7 +882,7 @@ public:
         B_Update2->setObjectName(QStringLiteral("B_Update2"));
         B_Update2->setMinimumSize(QSize(48, 38));
         QIcon icon6;
-        icon6.addFile(QStringLiteral(":/sync1.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QStringLiteral(":/Icons/sync1.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Update2->setIcon(icon6);
         B_Update2->setIconSize(QSize(30, 30));
 
@@ -892,7 +892,7 @@ public:
         B_AllOriginal->setObjectName(QStringLiteral("B_AllOriginal"));
         B_AllOriginal->setMinimumSize(QSize(48, 38));
         QIcon icon7;
-        icon7.addFile(QStringLiteral(":/Back_arrow_to_first_track_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QStringLiteral(":/Icons/Back_arrow_to_first_track_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_AllOriginal->setIcon(icon7);
         B_AllOriginal->setIconSize(QSize(30, 30));
 
@@ -904,7 +904,7 @@ public:
         B_Sidemenu2->setMinimumSize(QSize(46, 38));
         B_Sidemenu2->setCursor(QCursor(Qt::ArrowCursor));
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/lists8.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QStringLiteral(":/Icons/lists8.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Sidemenu2->setIcon(icon8);
         B_Sidemenu2->setIconSize(QSize(30, 30));
 
@@ -915,7 +915,7 @@ public:
         B_saveRaw->setMinimumSize(QSize(46, 38));
         B_saveRaw->setMaximumSize(QSize(46, 38));
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/Raw_file_format_symbol_256.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QStringLiteral(":/Icons/Raw_file_format_symbol_256.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_saveRaw->setIcon(icon9);
         B_saveRaw->setIconSize(QSize(30, 30));
 
@@ -927,7 +927,7 @@ public:
         B_Quit->setMinimumSize(QSize(46, 38));
         B_Quit->setCursor(QCursor(Qt::ArrowCursor));
         QIcon icon10;
-        icon10.addFile(QStringLiteral(":/Close_button_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon10.addFile(QStringLiteral(":/Icons/Close_button_512.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Quit->setIcon(icon10);
         B_Quit->setIconSize(QSize(30, 30));
 
@@ -2269,7 +2269,7 @@ public:
         B_Orderchange->setMaximumSize(QSize(46, 38));
         B_Orderchange->setCursor(QCursor(Qt::ArrowCursor));
         QIcon icon11;
-        icon11.addFile(QStringLiteral(":/together.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon11.addFile(QStringLiteral(":/Icons/together.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_Orderchange->setIcon(icon11);
         B_Orderchange->setIconSize(QSize(30, 30));
 
@@ -2913,7 +2913,7 @@ public:
         B_RotationOrig->setMinimumSize(QSize(0, 0));
         B_RotationOrig->setMaximumSize(QSize(50, 16777215));
         QIcon icon12;
-        icon12.addFile(QStringLiteral(":/curved.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon12.addFile(QStringLiteral(":/Icons/curved.ico"), QSize(), QIcon::Normal, QIcon::Off);
         B_RotationOrig->setIcon(icon12);
 
         horizontalLayout_2->addWidget(B_RotationOrig);
@@ -3881,7 +3881,7 @@ public:
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QStringLiteral("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 79, 64));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 380, 640));
         verticalLayout_5 = new QVBoxLayout(scrollAreaWidgetContents_2);
         verticalLayout_5->setSpacing(6);
         verticalLayout_5->setContentsMargins(11, 11, 11, 11);
@@ -4230,7 +4230,7 @@ public:
         B_Orderchange->setText(QString());
         B_Sidemenu->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        groupBox_3->setToolTip(QString());
+        groupBox_3->setToolTip(QApplication::translate("mainwindow", "<html><head/><body><p>Clockwise</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
         groupBox_3->setTitle(QApplication::translate("mainwindow", "Image Processing", 0));
         label_4->setText(QApplication::translate("mainwindow", "Rotation:               ", 0));

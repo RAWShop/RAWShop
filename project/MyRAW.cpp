@@ -208,44 +208,67 @@ void MyRAW::convert_t_to_rgb(int temperatur, float* rgb){
 }
 
 void MyRAW::convert_rgb_to_t(){
-		int temp_out = 6500;
-		float rgb_d65[3] = {0.950456, 1, 1.088754}; // RGB multiplier for 6500k
+        int temp_out = 6500;
+        float rgb_d65[3] = {0.950456, 1, 1.088754}; // RGB multiplier for 6500k
 
-		float tmin, tmax, tmp[3], original_temperature_rgb[3], intended_temperature_rgb[3];
-		for(int k = 0; k < 3; k++) 
-			 tmp[k] = cam_mul_rgb[k];
-								//rgb values are saved in temp for approximation
+        float tmin, tmax, tmp[3], original_temperature_rgb[3], intended_temperature_rgb[3];
+        for(int k = 0; k < 3; k++)
+             tmp[k] = cam_mul_rgb[k];
+                                //rgb values are saved in temp for approximation
 
-		tmin = 1500;			//lowest Temperatur of the Slider in the GUI
-		tmax = 25000;			//highest Temperatur of the Slider in the GUI
+        tmin = 1500;			//lowest Temperatur of the Slider in the GUI
+        tmax = 25000;			//highest Temperatur of the Slider in the GUI
 
-		convert_t_to_rgb (temp_out, original_temperature_rgb);
+        convert_t_to_rgb (temp_out, original_temperature_rgb);
 
-		for(originalTemprange = (tmax + tmin) / 2; tmax - tmin > 1; originalTemprange = (tmax + tmin) / 2) // 
-		{
-		 convert_t_to_rgb (originalTemprange,  intended_temperature_rgb);	//converts the temperatur and puts the output into temp
-		 tmp[0] = original_temperature_rgb[0] / intended_temperature_rgb[0];
-		 tmp[1] = original_temperature_rgb[1] / intended_temperature_rgb[1];
+        for(originalTemprange = (tmax + tmin) / 2; tmax - tmin > 1; originalTemprange = (tmax + tmin) / 2) //
+        {
+         convert_t_to_rgb (originalTemprange,  intended_temperature_rgb);	//converts the temperatur and puts the output into temp
+         tmp[0] = original_temperature_rgb[0] / intended_temperature_rgb[0];
+         tmp[1] = original_temperature_rgb[1] / intended_temperature_rgb[1];
          tmp[2] = original_temperature_rgb[2] / intended_temperature_rgb[2];
-         
-		 
-		 if(tmp[2] / tmp[0] < cam_mul_rgb[2] / cam_mul_rgb[0]) // Red/blue > Red/Blue means if approximation is bigger than the actuall Temperatur
-		    tmax = originalTemprange;
-		  else
-		    tmin = originalTemprange;					//increases either tmax or tmin depending if
-		}
-			originalTint =  (cam_mul_rgb[1] / cam_mul_rgb[0]) / (tmp[1] / tmp[0])+0.06; //Calculation of tint
-			if(originalTint < 0.1f) originalTint = 0.1f;
-			if(originalTint > 2.5f) originalTint = 2.5f;
+
+
+         if(tmp[2] / tmp[0] < cam_mul_rgb[2] / cam_mul_rgb[0]) // Red/blue > Red/Blue means if approximation is bigger than the actuall Temperatur
+            tmax = originalTemprange;
+          else
+            tmin = originalTemprange;					//increases either tmax or tmin depending if
+        }
+            originalTint =  (cam_mul_rgb[1] / cam_mul_rgb[0]) / (tmp[1] / tmp[0])+0.06; //Calculation of tint
+            if(originalTint < 0.1f) originalTint = 0.1f;
+            if(originalTint > 2.5f) originalTint = 2.5f;
 }
 
 
+/*
+void MyRAW::convert_rgb_to_t(int* temperatur,int* tint, float* rgb){
 
+        float tmin, tmax, tmp[3];
+        for(int k = 0; k < 3; k++)
+            tmp[k] = rgb[k];
+                                //rgb values are saved in temp for approximation
+
+        tmin = 1500;			//lowest Temperatur of the Slider in the GUI
+        tmax = 15000;			//highest Temperatur of the Slider in the GUI
+
+        for(*temperatur = (tmax + tmin) / 2; tmax - tmin > 1; *temperatur = (tmax + tmin) / 2) //
+        {
+         convert_t_to_rgb(*temperatur, tmp);	//converts the temperatur and puts the output into temp
+         if(tmp[2] / tmp[0] > rgb[2] / rgb[0]) // Red/blue > Red/Blue means if approximation is bigger than the actuall Temperatur
+           tmax = *temperatur;
+         else
+           tmin = *temperatur;					//increases either tmax or tmin depending if
+        }
+            *tint = (tmp[1] / tmp[0]) / (rgb[1] / rgb[0]); //Calculation of tint
+            if(*tint < 0.2f) *tint = 0.2f;
+            if(*tint > 2.5f) *tint = 2.5f;
+}
+*/
 
 void MyRAW::setoriginalTint_Temprange(){
-	for(int i = 0; i < 4;i++){
-		this->cam_mul_rgb[i] = this->imgdata.color.cam_mul[i];
-	}
+    for(int i = 0; i < 4;i++){
+        this->cam_mul_rgb[i] = this->imgdata.color.cam_mul[i];
+    }
         convert_rgb_to_t();
 }
 
@@ -268,9 +291,9 @@ float MyRAW::getoriginalgamma(){
 }
 
 void MyRAW::setoriginalgammaslope(){
-	original_gamma_slope=this->imgdata.params.gamm[1];
+    original_gamma_slope=this->imgdata.params.gamm[1];
 }
 
 float MyRAW::getoriginalgammaslope(){
-	return original_gamma_slope;
+    return original_gamma_slope;
 }

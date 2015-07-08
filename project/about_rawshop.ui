@@ -32,8 +32,8 @@
    <string>About RAWShop</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="rawshop.qrc">
-    <normaloff>:/rawshop_ico.ico</normaloff>:/rawshop_ico.ico</iconset>
+   <iconset resource="icons.qrc">
+    <normaloff>:/Icons/rawshop_ico.ico</normaloff>:/Icons/rawshop_ico.ico</iconset>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -564,7 +564,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="rawshop.qrc">:/rawshop_ico.ico</pixmap>
+        <pixmap resource="icons.qrc">:/Icons/rawshop_ico.ico</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -646,7 +646,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="rawshop.qrc">:/Logo_HS.ico</pixmap>
+           <pixmap resource="icons.qrc">:/Icons/Logo_HS_orig.ico</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -674,7 +674,7 @@ QSlider::add-page:vertical, QSlider::sub-page:vertical
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="rawshop.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>

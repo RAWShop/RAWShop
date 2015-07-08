@@ -27,8 +27,8 @@ class MyRAW:public LibRaw{
         void setoriginalTint_Temprange();
         void setgamma();
         float getoriginalgamma();
-		void setoriginalgammaslope();
-		float getoriginalgammaslope();
+        void setoriginalgammaslope();
+        float getoriginalgammaslope();
 
     private:
 
@@ -36,12 +36,12 @@ class MyRAW:public LibRaw{
         void tiff_head (int width, int height, struct tiff_hdr *th);
         void tiff_set (ushort *ntag,ushort tag, ushort type, int count, int val);
         int	originalflip;
-        unsigned int black_orig[5];				// Um original Blacklevel wiederherstellen zu können
+        unsigned int black_orig[5];				// Um original Blacklevel wiederherstellen zu kÃ¶nnen
         int originalTemprange;
-		float cam_mul_rgb[4];
+        float cam_mul_rgb[4];
         float originalTint;
         float original_gamma;
-		float original_gamma_slope;
+        float original_gamma_slope;
 
 };
 

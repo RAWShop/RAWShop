@@ -6,8 +6,8 @@
 
 class myQPixmap :public QPixmap
 {
-	public:
-		QPixmap getScaled(bool iszoomed, int SB_Z_value, int & startx, int & starty, float D_w, float D_h);
+    public:
+        QPixmap getScaled(bool iszoomed, int SB_Z_value, int & startx, int & starty, float D_w, float D_h);
 
 
 };

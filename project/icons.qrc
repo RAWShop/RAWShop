@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>Back_arrow_to_first_track_512.ico</file>
+        <file>Close_button_512.ico</file>
+        <file>curved.ico</file>
+        <file>lists8.ico</file>
+        <file>opened18.ico</file>
+        <file>Raw_file_format_symbol_256.ico</file>
+        <file>rawshop_ico.ico</file>
+        <file>Storage_diskette_512.ico</file>
+        <file>sync1.ico</file>
+        <file>together.ico</file>
+        <file>Zoom_1_1.ico</file>
+        <file>Zoom_in_button_512.ico</file>
+        <file>Zoom_out_512.ico</file>
+        <file>Logo_HS_orig.ico</file>
+    </qresource>
+</RCC>

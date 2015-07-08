@@ -6,7 +6,7 @@ QDoubleValidator_StandardNotation::QDoubleValidator_StandardNotation(double low,
     QDoubleValidator(low, top, deci, parent)
   {
 
-	  setNotation(QDoubleValidator::Notation::StandardNotation);
+      setNotation(QDoubleValidator::Notation::StandardNotation);
   }
 
-	QDoubleValidator_StandardNotation::~QDoubleValidator_StandardNotation(){};
+    QDoubleValidator_StandardNotation::~QDoubleValidator_StandardNotation(){};

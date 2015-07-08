@@ -50,7 +50,7 @@ public:
         About_RAWShop->setMinimumSize(QSize(550, 718));
         About_RAWShop->setMaximumSize(QSize(550, 718));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/rawshop_ico.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/Icons/rawshop_ico.ico"), QSize(), QIcon::Normal, QIcon::Off);
         About_RAWShop->setWindowIcon(icon);
         About_RAWShop->setAutoFillBackground(false);
         About_RAWShop->setStyleSheet(QLatin1String("QToolTip\n"
@@ -580,7 +580,7 @@ public:
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setMinimumSize(QSize(250, 250));
         label_3->setMaximumSize(QSize(250, 250));
-        label_3->setPixmap(QPixmap(QString::fromUtf8(":/rawshop_ico.ico")));
+        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Icons/rawshop_ico.ico")));
         label_3->setScaledContents(true);
 
         horizontalLayout_2->addWidget(label_3);
@@ -628,7 +628,7 @@ public:
         label->setMinimumSize(QSize(230, 230));
         label->setMaximumSize(QSize(230, 230));
         label->setAutoFillBackground(false);
-        label->setPixmap(QPixmap(QString::fromUtf8(":/Logo_HS.ico")));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/Icons/Logo_HS_orig.ico")));
         label->setScaledContents(true);
         label->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
         label->setWordWrap(false);

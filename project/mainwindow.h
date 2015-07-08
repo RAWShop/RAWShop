@@ -120,7 +120,7 @@ class mainwindow : public QMainWindow, public Ui::mainwindow{
                 void showQPM();
                 void showMetadata();
                 bool usedcraw();
-                void loaddata();									
+                void loaddata();
 
                 bool closeQuestion();									// "Schon gespeichert?" ja/nein
                 bool error(int errorcode, QString words);				// Funktion zur Fehlerausgabe

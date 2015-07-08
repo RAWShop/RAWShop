@@ -6,14 +6,14 @@
 
 class About_RAWShop : public QWidget
 {
-	Q_OBJECT
+    Q_OBJECT
 
 public:
-	About_RAWShop(QWidget *parent = 0);
-	~About_RAWShop();
+    About_RAWShop(QWidget *parent = 0);
+    ~About_RAWShop();
 
 private:
-	Ui::About_RAWShop ui;
+    Ui::About_RAWShop ui;
 };
 
 #endif // ABOUT_RAWSHOP_H
